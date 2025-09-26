@@ -1,0 +1,83 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    font-size: 1rem;
+    background-color: black;
+}
+
+
+h1 {
+    font-size: 2rem;
+    color: rgb(139, 16, 0);
+}
+
+h2 {
+    font-size: 1.7rem;
+    color: darkgreen;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: darkred;
+}
+
+h4 {
+    font-size: 1.3rem;
+    color: darkslateblue;
+}
+
+
+body p {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+
+body > p {
+    font-weight: bold;
+    color: #444;
+}
+
+
+h1 + img {
+    font-size: 0.9rem;
+    color: rgb(164, 71, 71);
+}
+
+h2 + p {
+    color: teal;
+    font-style: italic;
+}
+
+
+h2 ~ p {
+    color: brown;
+}
+
+
+a {
+    color: blue;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+
+a:hover {
+    color: red;
+    font-weight: bold;
+}
+
+p:first-child {
+    color: darkorange;
+}
+
+p:last-child {
+    font-style: italic;
+}
+
+
+p:first-line {
+    font-weight: bold;
+    color: #555;
+}
