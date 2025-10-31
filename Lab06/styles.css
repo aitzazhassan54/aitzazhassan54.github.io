@@ -15,7 +15,6 @@ body {
     padding: 0;
 }
 
-
 .navbar {
     position: sticky;
     top: 0;
@@ -45,7 +44,6 @@ body {
 .navbar a:hover {
     text-decoration: underline;
 }
-
 
 header {
     background-color: var(--primary-color);
@@ -88,7 +86,6 @@ header .university {
     font-style: italic;
 }
 
-
 .intro-img {
     float: right;
     width: 180px;
@@ -96,7 +93,6 @@ header .university {
     border-radius: 10px;
     margin: 0 0 10px 15px;
 }
-
 
 main {
     padding: 20px;
@@ -111,15 +107,14 @@ section {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
 
-
 h2 {
     color: var(--dark-primary);
     border-bottom: 2px solid var(--primary-color);
     padding-bottom: 5px;
 }
 
-
-p, a {
+p,
+a {
     font-size: 1rem;
     color: var(--text-color);
     line-height: 1.6;
@@ -134,7 +129,6 @@ a:hover {
     text-decoration: underline;
 }
 
-
 table {
     width: 100%;
     border-collapse: collapse;
@@ -143,7 +137,8 @@ table {
     background-color: #fff;
 }
 
-th, td {
+th,
+td {
     border: 1px solid #999;
     padding: 10px;
 }
@@ -158,7 +153,6 @@ tfoot td {
     font-style: italic;
     background-color: #f2f2f2;
 }
-
 
 hr {
     border: none;
@@ -180,7 +174,7 @@ hr {
     border-radius: 10px;
     padding: 15px;
     text-align: center;
-    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
 
 .skill-card img {
