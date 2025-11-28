@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Information Form</title>
+  <link rel="stylesheet" href="form.css">
+
+
+
+</head>
+
+<body>
+  <main>
+    <h1>Registration Form</h1>
+
+    <form>
+      <fieldset>
+        <legend>Personal Details</legend>
+
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" placeholder="Enter your name" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" min="10" max="100" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" placeholder="yourmail@gmail.com" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>Address Info</legend>
+
+        <label for="house">House / Street:</label>
+        <input type="text" id="house" placeholder="House #, Street #">
+
+        <label for="city">City:</label>
+        <input type="text" id="city" placeholder="e.g., Lahore">
+
+        <label for="province">Province:</label>
+        <input type="text" id="province" placeholder="e.g., Punjab">
+
+        <label for="postal">Postal Code:</label>
+        <input type="text" id="postal" placeholder="e.g., 54000">
+      </fieldset>
+
+      <fieldset>
+        <legend>Education</legend>
+
+        <label for="degree">Last Qualification:</label>
+        <select id="degree">
+          <option value="">--Select Qualification--</option>
+          <option value="matric">Matric</option>
+          <option value="inter">Intermediate</option>
+          <option value="bachelor">Bachelor's</option>
+          <option value="master">Master's</option>
+          <option value="phd">Ph.D</option>
+        </select>
+
+        <label for="institute">Institute Name:</label>
+        <input type="text" id="institute" placeholder="Name of institution">
+
+        <label for="gradyear">Passing Year:</label>
+        <input type="number" id="gradyear" min="1990" max="2025" placeholder="e.g., 2023">
+      </fieldset>
+
+      <fieldset class="skills">
+        <legend>Skills</legend>
+        <p>Select your skills:</p>
+
+        <label><input type="checkbox" value="C++">C++</label>
+        <label><input type="checkbox" value="HTML">HTML/CSS</label>
+        <label><input type="checkbox" value="Python">Python</label>
+        <label><input type="checkbox" value="SQL">SQL</label>
+        <label><input type="checkbox" value="JS">JavaScript</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Other Information</legend>
+
+        <label>Gender:</label>
+        <label><input type="radio" name="gender" value="male">Male</label>
+        <label><input type="radio" name="gender" value="female">Female</label>
+        <label><input type="radio" name="gender" value="other">Other</label>
+
+        <label for="comments">Comments / About You:</label>
+        <textarea id="comments" rows="5" placeholder="Write a short note about yourself..."></textarea>
+      </fieldset>
+
+      <button type="submit" class="submit-btn">Submit</button>
+
+    </form>
+  </main>
+  <script src="form.js"></script>
+
+</body>
+
+</html>

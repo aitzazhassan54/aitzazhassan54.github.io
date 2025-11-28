@@ -1,0 +1,94 @@
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      color: #222;
+      margin: 40px;
+    }
+
+    h1 {
+      text-align: center;
+      border-bottom: 3px solid #222;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    form {
+      width: 75%;
+      margin: 30px auto;
+      background-color: #fff;
+      border: 2px solid #000;
+      border-radius: 8px;
+      padding: 25px;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+    }
+
+    fieldset {
+      border: 1.5px solid #000;
+      margin-bottom: 20px;
+      padding: 15px;
+      background-color: #f9f9f9;
+    }
+
+    legend {
+      font-weight: bold;
+      color: #000;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    input[type="date"],
+    select,
+    textarea {
+      width: 97%;
+      padding: 6px;
+      margin-top: 5px;
+      border: 1px solid #555;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    textarea {
+      resize: none;
+    }
+
+    input[type="checkbox"],
+    input[type="radio"] {
+      margin-right: 5px;
+    }
+
+    .skills label {
+      display: inline-block;
+      margin-right: 10px;
+      font-weight: normal;
+    }
+
+    .submit-btn {
+      display: block;
+      margin: 20px auto 10px auto;
+      background-color: #000;
+      color: #fff;
+      padding: 8px 20px;
+      border: none;
+      cursor: pointer;
+      font-size: 15px;
+      border-radius: 5px;
+    }
+
+    .submit-btn:hover {
+      background-color: #333;
+    }
+
+    p.note {
+      text-align: center;
+      font-size: 13px;
+      color: #555;
+    }
+  

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy loading demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            display: block;
+            margin: 50px auto;
+            max-width: 80%;
+            height: auto;
+            border: 2px solid #333;
+            border-radius: 8px;
+        }
+
+     
+        img.lazy {
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+
+        img.lazy.loaded {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Lazy loading screenshots</h1>
+
+  
+    <img src="SS1.PNG" alt="SCREENSHOT1">
+
+  
+    <img data-src="SS2.PNG" alt="SCREENSHOT2" class="lazy">
+    <img data-src="SS3.PNG" alt="SCREENSHOT3" class="lazy">
+    <img data-src="SS4.PNG" alt="SCREENSHOT4" class="lazy">
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const images = document.querySelectorAll("img.lazy");
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.src = img.dataset.src;
+                        img.classList.add('loaded');
+                        img.classList.remove('lazy');
+                        observer.unobserve(img); 
+                    }
+                });
+            });
+
+            images.forEach(img => observer.observe(img));
+        });
+    </script>
+</body>
+
+</html>
